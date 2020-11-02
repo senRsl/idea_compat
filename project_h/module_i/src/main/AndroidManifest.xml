@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dc.test.i">
+
+    <application>
+        <activity android:name=".ModuleIActivity" />
+    </application>
+
+</manifest>
