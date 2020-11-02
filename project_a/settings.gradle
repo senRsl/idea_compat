@@ -1,1 +1,11 @@
 include ':app_a', ':module_b', ':module_c', ':app_d'
+
+include ':module_i'
+project(':module_i').projectDir = new File(settingsDir, '../project_h/module_i')
+include ':module_j'
+project(':module_j').projectDir = new File(settingsDir, '../project_h/module_j')
+
+include ':module_p'
+project(':module_p').projectDir = new File(settingsDir, '../project_o/module_p')
+include ':module_q'
+project(':module_q').projectDir = new File(settingsDir, '../project_o/module_q')

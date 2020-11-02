@@ -27,4 +27,9 @@ dependencies {
 //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     implementation project(':module_b')
+
+    implementation project(':module_i')
+    implementation project(':module_j')
+    implementation project(':module_p')
+    implementation project(':module_q')
 }
