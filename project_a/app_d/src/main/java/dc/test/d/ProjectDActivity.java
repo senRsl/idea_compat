@@ -1,4 +1,4 @@
-package dc.test.a;
+package dc.test.d;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,14 +6,15 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
 import dc.test.b.ModuleBActivity;
+import dc.test.c.ModuleCActivity;
 
 /**
  * @author senrsl
- * @ClassName: ProjectAActivity
- * @Package: dc.test.a
+ * @ClassName: ProjectDActivity
+ * @Package: dc.test.d
  * @CreateTime: 2020/11/2 2:48 PM
  */
-public class ProjectAActivity extends Activity {
+public class ProjectDActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +26,15 @@ public class ProjectAActivity extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(ProjectAActivity.this, ModuleBActivity.class));
+                startActivity(new Intent(ProjectDActivity.this, ModuleBActivity.class));
             }
         }, 1000);
-    }
 
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startActivity(new Intent(ProjectDActivity.this, ModuleCActivity.class));
+            }
+        }, 2000);
+    }
 }
